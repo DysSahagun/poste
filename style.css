@@ -1,0 +1,114 @@
+/*-------------------------Clearfix-------------------------*/
+.clearfix:before,
+.clearfix:after,
+#content:before,
+#content:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after,
+#content:after {
+    clear: both;
+}
+
+.clearfix,
+#content {
+    *zoom: 1;
+}
+
+/*-------------------------Image replacement-------------------------*/
+.ir {
+	display:block;
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*-------------------------Hide visually-------------------------*/
+.visuallyhidden,
+.assistive-text,
+.screen-reader-text,
+.site-description {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.reverse {
+    clip:rect(auto, auto, auto, auto);
+    height:auto;
+    margin:auto;
+    overflow:auto;
+    padding:inherit;
+    position:inherit;
+    width:auto;
+}
+
+/*-------------------------Skeleton-------------------------*/
+#masthead-cr,
+#main-cr,
+#colophon-cr,
+.post {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+#masthead-cr,
+#main-cr,
+#colophon-cr {
+	margin:0 auto;
+	max-width:300px;
+}
+
+#page {bottom:0;}
+
+/*-------------------------Poste-------------------------*/
+#content,
+#colophon-cr {
+	background-color:#663411;
+}
+
+/*-------------------------Posts-------------------------*/
+.post {
+	float:left;
+	margin-left:-25%;
+	padding:1em;
+	width:100%;
+	margin-bottom:1em;
+	overflow:hidden;
+}
+
+.post:nth-child(odd) {background:#00aeef;}
+
+.post:nth-child(odd),
+.post:nth-child(odd) a,
+.post:nth-child(odd) a:visited {color:#fff;}
+
+.post:nth-child(even) {
+	clear:left;
+	float:right;
+	margin-left:auto;
+	margin-right:-25%;
+	margin-left:auto;
+	background:#ffd400;
+}
+
+.post:nth-child(even),
+.post:nth-child(even) a,
+.post:nth-child(even) a:visited {color:#222;}
